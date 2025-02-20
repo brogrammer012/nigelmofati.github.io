@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="nigel-mofati-high-resolution-logo.png" />
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+      <script type="text/javascript">
+          (function () {
+            emailjs.init({
+              publicKey: "K2RL21oYMniEIu--C",
+            });
+          })();
+      </script>
+
+    <script src="script.js"></script>
+  </head>
+  <body>
+        <header class = "header">
+          <a href="#home" class = "logo">
+            Nigel <span>Mofati</span>
+          </a>
+
+          <i class = "bx bx-menu" id = "menu-icon"></i>
+
+          <nav class = "navbar">
+            <a href = "#home" >Home</a>
+            <a href = "#about" >About</a>
+            <a href = "#services" >Services</a>
+            <a href = "#projects" >Projects</a>
+            <a href = "#contact" >Contact</a>
+          </nav>
+
+        </header>
+
+      <section class="home" id="home">
+
+        <div class="home-content">
+          <h1>Hello World, It's <span>Nigel</span>.</h1>
+          <h3>I am a <span>Computer Science student</span> at the <span>University of Pretoria</span>.</h3>
+          <p>
+            You're here because you're hiring and I led you here because I want to be hired.
+            Aren't we just a match made in heaven?
+          </p>
+
+          <div class = "social-icons">
+            <a href = "https://www.linkedin.com/in/nigel-mofati-96360122b/" = "#"><i class = "bx bxl-linkedin"></i></a>
+            <a href = "https://github.com/brogrammer012"><i class = "bx bxl-github"></i></a>
+          </div>
+
+          <div class = "btn-group">
+            <a href ="mailto:nigelmofati@gmail.com?subject=Contact Request&body=Hello, I would like to get in touch with you." class="btn">Hire</a>
+            <a href ="#contact" class="btn">Contact</a>
+
+          </div>
+
+         
+      </section>
+    
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="nigel.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+          <h2>About<span> Me</span></h2>
+          <p>
+            Hi, I’m Nigel Mofati—Harare-born, Johannesburg-bred, and a final-year Computer Science student at the University of
+            Pretoria. In 2022, I founded SpiderWebsCoded, a tech startup driven by innovation. I aspire to become a software
+            engineer, with a strong passion for backend development, cybersecurity, and cloud engineering. I thrive on solving
+            complex problems and building scalable, secure systems.
+          </p>
+          <!-- <a href = "#" class = "btn">Read More</a> -->
+          </div>
+        </section>
+
+        <section class="services" id="services">
+          <h2 class = "heading">Services</h2>
+
+          <div class="services-container">
+            <div class="services-box">
+              <div class="services-info">
+              <i class="bx bx-code-curly"></i>
+                <h4>Website Development and Deployment</h4>
+                <p>
+                  I provide modern, responsive web design and seamless deployment tailored to your needs. From visually appealing
+                  interfaces to robust backend solutions, I ensure your website is both functional and user-friendly. Let’s bring your
+                  vision to life with a professional, fast, and secure online presence
+                </p>
+              </div>
+            </div>
+
+            <div class="services-box">
+              <div class="services-info">
+                <i class="bx bxl-figma"></i>
+                <h4>Digital Marketing</h4>
+                <p>
+                  I offer digital marketing services focused on driving growth through targeted ads, SEO optimization, and influencer
+                  collaborations. By leveraging data-driven strategies, I help businesses increase visibility, attract the right audience,
+                  and maximize conversions. Whether it's running high-performing ad campaigns or boosting brand presence through social
+                  media, I deliver results that matter.
+                </p>
+              </div>
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects">
+          <h2 class = "heading">Projects</h2>
+
+          <div class="projects-box">
+            <div class="project-card">
+              <img src="american-heritage-chocolate-vdx5hPQhXFk-unsplash.jpg" alt="">
+              <div class="projects-info">
+                <h3>Mia's Cakery</h3>
+                <p>
+                  A website for a Pretoria based bakery that specializes in custom cakes and cupcakes for all occasions.
+                </p>
+              <a href="https://miascakery.co.za" target="_blank" rel="noopener">
+                <div class="btn">Review Project</div>
+              </a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="ed-van-duijn-UUdJ-0LQs0M-unsplash.jpg" alt="">
+              <div class="projects-info">
+                <h3>SpiderWebsCoded</h3>
+                <p>
+                  A tech startup that provides web development, web deployment and digital marketing services.
+                </p>
+                <a href="https://spiderwebscoded.co.za" target="_blank" rel="noopener">
+                <div class="btn">Review Project</div>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="contact" id="contact">
+          <h2 class = "heading">Contact <span>Me</span></h2>
+          <form action="#">
+            <div class="input-group">
+              <div class="input-box">
+                <input type="text" placeholder="Full Name" id="name" name="name" required>
+                <input type="email" placeholder="Email" id="email" name="email" required>
+  
+              <div class="input-box"></div>
+              <input type="text" placeholder="Phone Number" id="number" name="number" required>
+              <input type="text" placeholder="Subject" id="subject" name="subject" required>
+            </div>
+            </div>
+              
+            <div class="input-group-2">
+               <textarea name ="message" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+               <input type="submit" value="Send Message" class="btn" onclick="sendMail()">
+            </div>
+          </form>
+        </section>
+        <footer class="footer">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/nigel-mofati-96360122b/"><i class="bx bxl-linkedin"></i></a>
+            <a href="https://github.com/brogrammer012"><i class="bx bxl-github"></i></a>
+          </div>
+
+          <ul class="list">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About Me</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            © Nigel Mofati        </p>
+        </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
